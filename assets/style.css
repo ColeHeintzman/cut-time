@@ -1,10 +1,17 @@
-.header-bar {
+.nav-bar {
     position: relative;
     width: 100%;
     font-family:Verdana, Times, Tahoma, sans-serif;
-    font-size: 24px;
+    font-size: 12;
     font-weight: bold;
 
+}
+.questions {
+    font-family:Verdana, Times, Tahoma, sans-serif;
+    font-size: 12;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 body {
     background-color:cornsilk;
@@ -16,6 +23,3 @@ body {
     float: right;
 }
 
-p {
-    text-align: center;
-}

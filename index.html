@@ -4,19 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Timed Javascript Quiz</title>
     <link rel="stylesheet" href="assets/style.css">
+    <title>Timed Coding Quiz</title>
 </head>
-<header>
-    <section class ="header-bar">
-        <span id="highscores">View High Scores</span>
-        <span id="timer"> Time: </span>
-    </section>
-</header>
-<body> 
-    <section class ="questions">
-        <p>placedholder</p>
-    </section>
-    <scipt src="./assets/script.js"></scipt>
+<body>
+    <nav class ="nav-bar">
+        <a id="highscores" href="#highscores">View High Scores</a>
+        <div id="timer">Time: <span id="counter"></span></div>
+    </nav>
+    <div id="questions" class ="questions">
+    </div>
+    <button id="submit">Submit Quiz</button>
+    <div id="results"></div>
+    <script src="./assets/script.js"></script>
 </body>
 </html>
