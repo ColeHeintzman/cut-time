@@ -1,0 +1,21 @@
+.header-bar {
+    position: relative;
+    width: 100%;
+    font-family:Verdana, Times, Tahoma, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+
+}
+body {
+    background-color:cornsilk;
+}
+#highscore {
+    float: left;
+}
+#timer {
+    float: right;
+}
+
+p {
+    text-align: center;
+}
