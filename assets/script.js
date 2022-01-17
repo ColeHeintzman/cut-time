@@ -1,3 +1,4 @@
+
 function buildQuiz(){
     const output = [];
     myQuestions.forEach(
@@ -29,13 +30,6 @@ function buildQuiz(){
       const answerContainer = answerContainers[questionNumber];
       const selector = `input[name=question${questionNumber}]:checked`;
       const userAnswer = (answerContainer.querySelector(selector) || {}).value;
-      if(userAnswer === currentQuestion.correctAnswer){
-        numCorrect++;
-        answerContainers[questionNumber].style.color = 'lightgreen';
-      }
-      else{
-        answerContainers[questionNumber].style.color = 'red';
-      }
     });
     resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
   }
@@ -57,8 +51,8 @@ function buildQuiz(){
       nextButton.style.display = 'inline-block';
       submitButton.style.display = 'none';
     }
+   
   }
-
 const quizContainer = document.getElementById('quiz');
 const resultsContainer = document.getElementById('results');
 const submitButton = document.getElementById('submit');
@@ -123,8 +117,9 @@ var interval = setInterval(function(){
     clearInterval(interval);
     document.getElementById('count').innerHTML='Done';
     alert("You're out of time!");
-  }
+  }  
 }, 1000);
+
 
 
 buildQuiz();
