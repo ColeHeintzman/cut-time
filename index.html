@@ -10,10 +10,14 @@
 <body>
     <nav class ="nav-bar">
         <a id="highscores" href="#highscores">View High Scores</a>
-        <div id="timer">Time: <span id="counter"></span></div>
+        <div id="count" class="timer"></div>
     </nav>
-    <div id="questions" class ="questions">
+    <div class ="quiz-container">
+    <div id="quiz" class ="questions">
     </div>
+    </div>
+    <button id="previous">Previous Question</button>
+    <button id="next">Next Question</button>
     <button id="submit">Submit Quiz</button>
     <div id="results"></div>
     <script src="./assets/script.js"></script>

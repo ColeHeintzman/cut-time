@@ -1,3 +1,7 @@
+body {
+    background-color:cornsilk;
+    font-size: 24;
+}
 .nav-bar {
     position: relative;
     width: 100%;
@@ -6,20 +10,44 @@
     font-weight: bold;
 
 }
-.questions {
+.question {
     font-family:Verdana, Times, Tahoma, sans-serif;
-    font-size: 12;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+    font-weight: 600;
+   
 }
-body {
-    background-color:cornsilk;
+.answers {
+    display: inline-block;
 }
+.answers label{
+    display: block;
+    margin-bottom: 10px;
+}
+
 #highscore {
     float: left;
 }
-#timer {
+#count {
     float: right;
 }
 
+.slide{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+.active-slide{
+    opacity: 1;
+    z-index: 2;
+  }
+.quiz-container{
+    position: relative;
+    height: 200px;
+    margin-top: 40px;
+    display: block;
+    align-items: center;
+    text-align: center;
+  }
